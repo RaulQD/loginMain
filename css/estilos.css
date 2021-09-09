@@ -116,7 +116,7 @@ section{
 .content-title p,
 .content__second-title P{
     font-size:18px;
-    color:#919090;
+    color:#818181;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -141,7 +141,7 @@ section{
     margin-bottom: 1rem;
 }
 .footer{
-    margin:9rem 0;
+    margin:5rem 0;
 }
 .footer-content{
     display:flex;
@@ -152,6 +152,13 @@ section{
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
+.footer-info p{
+    color:#818181;
+    margin-bottom: 5rem;
+}
+.footer-info span{
+    color:#818181;
+}
 .footer-links{
     list-style: none;
 }
@@ -160,4 +167,20 @@ section{
 }
 .footer-links li{
     margin-bottom: 1.5rem;
+}
+.line{
+    border-bottom: 2px solid #818181;
+    margin: 3rem 0;
+}
+.footer-copy{
+    text-align: center;
+    color:#818181;
+    line-height: 1.5;
+}
+.footer-copy a{
+    color:#4441f1;
+    transition: 0.3s ease;
+}
+.footer-copy a:hover{
+    color:#5b58fc;
 }

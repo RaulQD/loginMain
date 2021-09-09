@@ -1,0 +1,36 @@
+@media (max-width : 992px ) {
+    .navbar__arrow a{
+        display:none;
+    }
+    .login__grid{
+        grid-template-columns: 1fr;
+    }
+    .login__content{
+        margin: 10rem 0;
+    }
+}
+
+@media (max-width :  600px ) {
+    .login__content{
+        margin:6rem 0;
+    }    
+    .login__text{
+        width: 100%;
+        font-size: 15px;
+    }
+    .login__info h2{
+        font-size: 3rem;
+    }
+    .formulario h3{
+        font-size: 2rem;
+    }
+    .login__label{
+        font-size: 15px;
+    }
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+    .btn-account{
+        font-size:15px;
+    }
+}
