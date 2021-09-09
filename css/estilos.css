@@ -31,10 +31,11 @@ section{
 /*NAVEGACIÓN*/
 
 .navbar{
-    margin-top:4rem;
+    margin-top:2rem;
 }
 .navbar__brand{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,6 +47,10 @@ section{
     margin-top:2rem;
     color:#000000;
     font-weight: 500;
+    list-style: none;
+}
+.navbar__links a{
+    color:#919090
 }
 .btn-getprice{
     background: #5b58fc;
@@ -58,12 +63,18 @@ section{
     text-transform: capitalize;
     transition: 0.3s all ease-in-out;
 }
+.btn-getprice a{
+    color:#ffffff;
+}
 .btn-getprice:hover{
     background:#6f6df1;
 }
 .btn-getprice span{
     color:#b9b9b9;
     text-transform: none;
+}
+.openMenu{
+    display:none;
 }
 
 /***HEADER***/
@@ -73,15 +84,16 @@ section{
     justify-content: space-evenly;
     align-items: center;
     gap:2rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 .header-info h2{
-    font-size: 5.7rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
 }
 .header-info p {
-    font-size: 18px;
+    font-size: 1.65rem;
     color:#919090;
+    line-height: 1.5;
 }
 .header-button{
     margin-top: 4rem;
@@ -97,8 +109,12 @@ section{
     font-weight: bold;
     text-decoration: underline;
 }
+.header-img{
+    width: 100%;
+
+}
 .header-img img{
-    max-width: 600px;
+    max-width: 100%;
 }
 /***MAIN***/
 
@@ -110,15 +126,21 @@ section{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 15rem;
+    column-gap: 15rem;
 }
 
+.content-title h2,
+.content__second-title h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
 .content-title p,
 .content__second-title P{
-    font-size:18px;
+    font-size:17px;
     color:#818181;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+
 }
 .content-title a,
 .content__second-title a{
@@ -132,29 +154,35 @@ section{
     color:#6f6df1;
     
 }
-.content-img img{
-    max-width:400px;
+.content-img{
+    width: 50%;
 }
-.content-title h2,
-.content__second-title h2{
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+.content-img img{
+    max-width:100%;
 }
 .footer{
     margin:5rem 0;
 }
 .footer-content{
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:2rem; */
+
     display:flex;
-    justify-content: space-between;
-    gap:10rem;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.footer-info:nth-child(1){
+    width: 48%;
 }
 .footer-info h3{
-    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 .footer-info p{
     color:#818181;
     margin-bottom: 5rem;
+    width: 60%;
+    line-height: 1.5;
 }
 .footer-info span{
     color:#818181;

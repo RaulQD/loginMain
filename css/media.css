@@ -8,6 +8,43 @@
     .login__content{
         margin: 10rem 0;
     }
+    .navbar__link.show{
+        display:flex;
+    }
+    .navbar__link{
+        display:none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .openMenu{
+        display:block;
+        cursor: pointer;
+    }
+    .header-flex{
+        flex-direction: column-reverse;
+    }
+    .content-first{
+       flex-direction: column-reverse;
+    }
+    .content-second{
+        flex-direction: column;
+    }
+    .header-img{
+        margin-top: 2rem;
+     }
+}
+
+@media (max-width :  768px ) {
+
+    .header-info h2{
+        font-size: 4rem;
+    }
+    .content-img{
+        width:100%;
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media (max-width :  600px ) {
@@ -30,7 +67,43 @@
     ::placeholder{
         font-size: 1.5rem;
     }
+    .header-info p {
+        font-size: 1.6rem;
+    }
     .btn-account{
         font-size:15px;
+    }
+    .footer-info:nth-child(1){
+        width:100%;
+    }
+    .footer-info p{
+        font-size:15px;
+    }
+    .footer-info:nth-child(2),
+    .footer-info:nth-child(4){
+        margin-right:5rem;
+    }
+    .footer-info:nth-child(3),
+    .footer-info:nth-child(5){
+        margin-left:7rem;
+    }
+
+    .footer-info p{
+        width: 100%;
+    }
+}
+@media (max-width :  448px ) {
+    .header-info h2{
+        font-size: 5rem;
+    }
+}
+@media (max-width :  400px ) {
+    .footer-info:nth-child(2),
+    .footer-info:nth-child(4){
+        margin-right:3rem;
+    }
+    .footer-info:nth-child(3),
+    .footer-info:nth-child(5){
+        margin-left:5rem;
     }
 }
