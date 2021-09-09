@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up | IndieBrew Starter Files</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <nav class="principal container">
+        <div class="navbar__content">
+            <div class="navbar___logo">
+                <img src="img/Logo.svg" alt="Logo">
+            </div>
+            <div class="navbar__arrow">
+                <img src="img/Back-Arrow.svg" alt="Back-Arrow">
+                <a href="index.html">Back to homepage</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="login__content">
+            <div class="container">
+                <div class="login__grid">
+                    <div class="login__info">
+                        <h2>Create your personalized feed.</h2>
+                        <div class="login__options">
+                            <div class="login__icons">   
+                                <i class="fas fa-chalkboard"></i>
+                            </div>
+                            <div class="login__text">
+                                <p><span>Over 20 resources.</span> With resources ranging from Reddit and IndieHackers, we've got all your needs covered.</p>
+                            </div>
+                        </div>
+                        <div class="login__options">
+                            <div class="login__icons">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="login__text">
+                                <p><span>Delivered Weekly.</span> Every week at exactly Tuesday 12:00 P.M. EST - expect value-packed digest right in your email.</p>
+                            </div>
+                        </div>
+                        <div class="login__options">
+                            <div class="login__icons">
+                                <i class="far fa-lightbulb"></i>
+                            </div>
+                            <div class="login__text">
+                                <p><span>Unlimited ideas.</span> With all ideas you'll be reading about, what stopping your from creating a sustainable startup?.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <form action="#" class="formulario" id="group-form">
+                            <h3>Create your IndieBrew Account</h3>
+                            <div class="login__campo">
+                                <label class="login__label mail" for="email">Email</label>
+                                <input class="login__input" type="email" name="email"  id="email" placeholder="example@example.com">
+                            </div>
+                            <div class="login__campo">
+                                <label class="login__label" for="name">Full Name</label>
+                                <input class="login__input" type="text" name="name" id="name" placeholder="Full Name">
+                            </div>
+                            <div class="login__campo">
+                                <label class="login__label" for="password">Password</label>    
+                                <input class="login__input" type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="login__terms">
+                                <input type="checkbox" name="terms" id="terms">
+                                <p>By creating an account on IndieBrew, you are agree to the <a href="#">Terms & Conditions.</a></p>
+                            </div>
+                            <div id="spinner">
+                                <div class="sk-chase">
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                  </div>
+                            </div>
+                            <div class="login__campo">
+                                <button class="btn-account" id="btn-send" name="button">Create an Account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <script src="https://kit.fontawesome.com/802d4ef448.js" crossorigin="anonymous"></script>
+   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
